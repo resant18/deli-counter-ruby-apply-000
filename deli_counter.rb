@@ -1,4 +1,5 @@
 # Write your code here.
+$ticket_number = 1
 
 def line(katz_deli)
   if katz_deli.empty?
@@ -13,6 +14,12 @@ end
 def take_a_number(katz_deli, person)
   katz_deli << person
   puts "Welcome, #{person}. You are number #{katz_deli.size} in line."
+end
+
+def take_a_number2(kat_zeli, person)
+  katz_deli << person
+  puts "Welcome, #{person}. You are number #{$ticket_number} in line."
+  $ticket_number += 1 
 end
 
 def now_serving(katz_deli)
